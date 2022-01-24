@@ -25,11 +25,11 @@ def factorial(x):
 #joka ei nököjään halua toimia
 #wip
 
-def summ(num1, *args):
-    total = num1
-    for num in args:
-        total = total + num
-    return total
+def summ(l):
+  total = 0
+  for val in l:
+    total = total + val
+  return total
 #random function for addition
 f_print("choose the operation")
 print("")
@@ -40,12 +40,14 @@ print("")
 f_print("3. factorial")
 print("")
 f_print("4. fractals")
+print("     ")
 f_print("0 to exit")
 print("")
 while True:
+    additionlist.clear()
     #aaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA
     choice = input("operation: ")
-    if choice == 1 or choice.lower() == addition:
+    if choice == "1" or choice.lower() == addition:
         #addition
         while True:
             try:
@@ -70,6 +72,9 @@ while True:
                     f_print("give a proper answer")
                     print("")
         ans = summ(additionlist)   
+        numlist = ''.join(map(str, additionlist))
+        var1 = "addition of " + numlist + " is " + str(ans)
+        list.append(var1)
         print(ans)
         #welp this doesnt work
         # gotta fix summ to work with lists
