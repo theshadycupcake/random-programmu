@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 import sys, time
+=======
+import sys, time, math, turtle, geometry
+from turtle import *
+>>>>>>> Stashed changes
 #is just useful stuff to have
 addition = "addition"
 #variable joka tekee ohjelmasta enemmän user friendly
@@ -39,10 +44,9 @@ print("")
 f_print("3. factorial")
 print("")
 f_print("0 to exit")
-#AAAAAAAAAAAAA
-
+print("")
 while True:
-    print("")
+    #aaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA
     choice = input("operation: ")
     if choice == 1 or choice.lower() == addition:
         #addition
@@ -87,6 +91,47 @@ while True:
         var1 = "factorial of " + str(number) + " is " + str(factnum)
         list.append(var1)
         #stuff happens here, dont ask me wat
+<<<<<<< Updated upstream
+=======
+    if choice == "4" or choice.lower() == geometrr:
+        f_print("1. triangles")
+        print("")
+        f_print("2. fractals")
+        print("")
+        choice = input("operation: ")
+        if choice == "1" or choice.lower() == "triangles":
+            print("What type of triangle")
+            f_print("1. equilateral triangle")
+            print("")
+            choice = input("")
+            if choice == "1" or choice.lower() == "equilateral triangle":
+                while True:
+                    try:
+                        lenght = int(input("Lenght of the triangle? "))
+                    except ValueError:
+                        print("please give a number: ")
+                    else:
+                        break
+                geometry.draw_equilateral_triangle(lenght)
+        if choice == "2" or choice.lower() == "fractals":
+            print("What type of fractal")
+            f_print("1. tree")
+            print("")
+            choice = input("")
+            if choice == "1" or choice.lower() == "tree":
+                while True:
+                    try:
+                        lenght = int(input("Lenght of the fractal? "))
+                        lvl= int(input("Level of the fractal? would suggest keeping this bellow 10: "))
+                        angle = int(input("Angle of the fractal"))
+                    except ValueError:
+                        print("please give a number: ")
+                    else:
+                        break
+                geometry.fractree(lenght, lvl)
+
+        
+>>>>>>> Stashed changes
     if choice == "0":
         break
 print(list)
