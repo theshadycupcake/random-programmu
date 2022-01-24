@@ -8,6 +8,17 @@ def draw_equilateral_triangle(x):
     t.lt(120)
     t.fd(x)
 #simppeli tasasiuinen kolmio'
+def draw_square(x):
+    t = turtle.Turtle()
+    t.fd(x)
+    t.lt(90)
+    t.fd(x)
+    t.lt(90)
+    t.fd(x)
+    t.lt(90)
+    t.fd(x)
+    t.lt(90)
+#vielä simppelimpi neliön piirto
 angle = 30
 def fractree(size, lvl):   
   
@@ -33,4 +44,4 @@ def fractree(size, lvl):
           
         right(angle)
         forward(-size)
-        #very much not my code for my brain is not big enough to think how to d
+        #very much not my code for my brain is not big enough to think how to draw this
