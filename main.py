@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
-import sys, time
-=======
 import sys, time, math, turtle, geometry
 from turtle import *
->>>>>>> Stashed changes
 #is just useful stuff to have
 addition = "addition"
 #variable joka tekee ohjelmasta enemmän user friendly
@@ -43,6 +39,7 @@ f_print("2. substraction")
 print("")
 f_print("3. factorial")
 print("")
+f_print("4. fractals")
 f_print("0 to exit")
 print("")
 while True:
@@ -91,9 +88,7 @@ while True:
         var1 = "factorial of " + str(number) + " is " + str(factnum)
         list.append(var1)
         #stuff happens here, dont ask me wat
-<<<<<<< Updated upstream
-=======
-    if choice == "4" or choice.lower() == geometrr:
+    if choice == "4" or choice.lower() == "geometry":
         f_print("1. triangles")
         print("")
         f_print("2. fractals")
@@ -131,7 +126,6 @@ while True:
                 geometry.fractree(lenght, lvl)
 
         
->>>>>>> Stashed changes
     if choice == "0":
         break
 print(list)
