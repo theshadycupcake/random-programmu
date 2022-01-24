@@ -7,6 +7,7 @@ factoriall = "factorial"
 yes = ["Yes", "1. Yes"]
 list = []
 #lista vastausten tallentamissen ja .txt documenttiin printtaamiseen jos käyttäjä haluaa
+additionlist = []
 def f_print(srt):
     for let in srt:
         sys.stdout.write(let)
@@ -22,6 +23,13 @@ def factorial(x):
 #kertoma funtio koska miksi ei0
 #joka ei nököjään halua toimia
 #wip
+
+def summ(num1, *args):
+    total = num1
+    for num in args:
+        total = total + num
+    return total
+#random function for addition
 f_print("choose the operation")
 print("")
 f_print("1. addition")
@@ -31,11 +39,39 @@ print("")
 f_print("3. factorial")
 print("")
 f_print("0 to exit")
+#AAAAAAAAAAAAA
+
 while True:
     print("")
     choice = input("operation: ")
     if choice == 1 or choice.lower() == addition:
-        f_print("jaa")
+        #addition
+        while True:
+            try:
+                number = int(input(f_print("Num: ")))
+            except ValueError:
+                print("please give a number")
+                continue
+            else:
+                additionlist.append(number)
+                f_print("Do you want to add another number? ")
+                print("")
+                print("1. Yes")
+                print("2. No")
+                anser = input(" ")
+                if anser == "yes" or anser == "yes":
+                    print("")
+                    continue
+                elif anser == "no" or anser == "No":
+                    break
+                else:
+                    print("")
+                    f_print("give a proper answer")
+                    print("")
+        ans = summ(additionlist)   
+        print(ans)
+        #welp this doesnt work
+        # gotta fix summ to work with lists
     if choice == "3" or choice.lower() == factoriall:
         while True:
             try:
