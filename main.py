@@ -119,6 +119,8 @@ while True:
             print("")
             f_print("2. square")
             print("")
+            print("3. hello world")
+            print("")
             choice = input("")
             if choice == "1" or choice.lower() == "equilateral triangle":
                 while True:
@@ -140,6 +142,9 @@ while True:
                         break
                 choice = ""
                 geometry.draw_square(lenght)
+            if choice == "3" or choice.lower == "hello world":
+                geometry.helloworld()
+                choice = ""
         if choice == "2" or choice.lower() == "fractals":
             print("What type of fractal")
             f_print("1. tree")
