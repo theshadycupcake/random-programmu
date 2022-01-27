@@ -89,8 +89,7 @@ while True:
         # gotta fix summ to work with lists
     if choice == "2" or choice.lower() == "substraction":
         print("this function does does not exist because i am lazy")
-        #welp this doesnt work
-        # gotta fix subb to work with lists
+        #welp this doesnt work^2
     if choice == "3" or choice.lower() == factoriall:
         while True:
             try:
